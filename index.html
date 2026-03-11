@@ -654,6 +654,131 @@
       .about-grid, .contact-inner { grid-template-columns: 1fr; }
       .skills-container { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 12px; text-align: center; }
+      /* ================= MOBILE & TABLET RESPONSIVE ================= */
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+nav {
+padding: 20px 32px;
+}
+
+section {
+padding: 80px 32px;
+}
+
+.hero {
+padding: 120px 32px 60px;
+}
+
+.about-grid {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.contact-inner {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.skills-container {
+grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* MOBILE PHONES */
+@media (max-width: 768px) {
+
+nav {
+padding: 18px 24px;
+}
+
+nav ul {
+display: none;
+}
+
+section {
+padding: 70px 24px;
+}
+
+.hero {
+padding: 120px 24px 60px;
+}
+
+.hero h1 {
+font-size: clamp(40px, 10vw, 60px);
+}
+
+.hero-cta {
+flex-direction: column;
+gap: 14px;
+}
+
+.btn-primary,
+.btn-secondary {
+width: fit-content;
+}
+
+.scroll-indicator {
+left: 24px;
+}
+
+.projects-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.skills-container {
+grid-template-columns: 1fr;
+}
+
+.stats-grid {
+grid-template-columns: 1fr 1fr;
+}
+
+footer {
+flex-direction: column;
+gap: 12px;
+text-align: center;
+}
+
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+.hero h1 {
+font-size: 34px;
+line-height: 1.2;
+}
+
+.hero-subtitle {
+font-size: 14px;
+}
+
+.typing-wrapper {
+font-size: 18px;
+}
+
+.stat-number {
+font-size: 36px;
+}
+
+.project-card {
+padding: 28px;
+}
+
+.skill-group {
+padding: 28px;
+}
+
+.contact-link {
+padding: 14px 16px;
+}
+
+}
+
     }
   </style>
 </head>
